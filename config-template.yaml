@@ -1,0 +1,19 @@
+database: "db1"
+source:
+  hostname: "localhost"
+  port: "27018"
+  username: "mongosyncdb"
+  password: "mypassword"
+target:
+  hostname: "localhost"
+  port: "27019"
+  username: "mongosyncdb"
+  password: "mypassword"
+initialLoad:
+  batchSize: 10000
+  maxWorkers: 2
+changeStream:
+  resume: False
+  checkpointBatchSize: 100
+  checkpointTimeInterval: 60
+  writeConcern: 1
