@@ -52,7 +52,7 @@ def loadCollections(config):
             filter={"type": "collection", "name": {"$nin": ["system.profile", "system.views"]}}
         )
 
-        # ✅ Read max_workers from config.yaml
+        # Read max_workers from config.yaml
         max_workers = config["initialLoad"].get("maxWorkers")
         max_workers = min(len(collections), max_workers)  # Ensure we don’t create more threads than needed
         logger.log(f"Using {max_workers} parallel workers for collection import",config)

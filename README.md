@@ -1,3 +1,14 @@
+<p align="center">
+  <a href="https://github.com/database-tools/mongosyncdb/releases">
+    <img alt="Release" src="https://img.shields.io/github/v/release/database-tools/mongosyncdb">
+  </a>
+  <a href="https://github.com/database-tools/mongosyncdb/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/database-tools/mongosyncdb">
+  </a>
+  <img alt="Python" src="https://img.shields.io/badge/python-3.9%2B-blue">
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/database-tools/mongosyncdb">
+</p>
+
 # MongoSyncDB
 MongoSyncDB is a tool to copy a mongodb database from one replicaset to another, keeping source and target synchronized through changestream.
 
